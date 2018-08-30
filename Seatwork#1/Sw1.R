@@ -6,7 +6,7 @@ plot(marvs)
 library(imager)
 file <- system.file('extdata/magnus.jpg' ,package = 'imager')
 marvs <- load.image(file)
-marvs<- resize(leo, 250, 250)
+marvs<- resize(marvs, 250, 250)
 plot(marvs,main = "Resized")
 
 
