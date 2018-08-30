@@ -1,6 +1,7 @@
 ####LOCAL####
 library(imager)
 install.packages("magick")
+
 file <- system.file('extdata/magnus.jpg' ,package = 'imager')
 marvs <-load.image(file)
 plot(marvs)
