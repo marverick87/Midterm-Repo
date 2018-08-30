@@ -8,12 +8,12 @@ plot(marv)
 
 #Resize Image
 library(imager)
-file <- system.file('extdata/parrots.jng' ,package = 'imager')
-marv <- load.image('parrots.jng')
+file <- system.file('extdata/parrots.jpg' ,package = 'imager')
+marv <- load.image('parrots.jpg')
 marv <- resize(marv, 250, 250)
 plot(marv,main = "Resized")
 
-#ReadImageThuWeb
+#ReadImageThruWeb
 install.packages("magick")
 
 library(magick)
@@ -28,7 +28,7 @@ cscale <- function(r,g,b) rgb(g,r,b)
 plot(marv,grayscale=cscale,rescale=FALSE)
 cscale <- function(v) rgb(0,0,v)
 grayscale(marv) %>% plot(grayscale=cscale,rescale=FALSE)
-marv <- resize(marv, 250, 250)
+
 
 #Invert Image
 library(imager)
