@@ -9,8 +9,8 @@ plot(marv)
 
 
 #Resize Image
-file <- system.file('extdata/parrots.jpg' ,package = 'imager')
-marv <- load.image('parrots.jpg')
+file <- system.file('extdata/parrots.png' ,package = 'imager')
+marv <- load.image('parrots.png')
 marv <- resize(marv, 250, 250)
 plot(marv,main = "Resized")
 
@@ -29,6 +29,7 @@ grayscale(marv) %>% plot(grayscale=cscale,rescale=FALSE)
 path <- system.file('exdata/parrots.png' , package = 'imager')
 marv <- load.image("C:/Users/RM A-225/Documents/R/win-library/3.5/imager/extdata/parrots.png")
 imrotate(marv,270) %>% plot(main = "Rotating")
+
 
 #ReadImageThruWeb
 marvs <- image_read('https://i.pinimg.com/originals/40/81/47/408147adeaffa8f3437acaf065049d31.png')
