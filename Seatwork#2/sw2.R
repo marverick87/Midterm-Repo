@@ -33,14 +33,14 @@ imrotate(marv,270) %>% plot(main = "Rotating")
 
 #ReadImageThruWeb
 marvs <- image_read('https://i.pinimg.com/originals/40/81/47/408147adeaffa8f3437acaf065049d31.png')
-print(marv)
+print(marvs)
 
 #Rezize
 file2 <- function(marvs, x1){
   marvs <- image_resize(marvs, x1)
   marvs
 }
-file(marvs, 500)
+file2(marvs, 500)
 
 
 #Grayscal
@@ -59,6 +59,6 @@ file2(marvs, 2)
 
 #invert
 file2 <- function(marvs, x1){
-  image_rotate(img2, x1)
+  image_rotate(marvs, x1)
 }
-file(marvs, 45)
+file2(marvs, 90)
