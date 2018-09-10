@@ -2,12 +2,12 @@
 library(imager)
 install.packages("magick")
 
-file <- system.file('extdata/magnus.jpg' ,package = 'imager')
+file <- system.file('extdata/parrots.png' ,package = 'imager')
 marvs <-load.image(file)
 plot(marvs)
 
 
-file <- system.file('extdata/magnus.jpg' ,package = 'imager')
+file <- system.file('extdata/parrots.png' ,package = 'imager')
 marvs <- load.image(file)
 marvs<- resize(marvs, 250, 250)
 plot(marvs,main = "Resized")
