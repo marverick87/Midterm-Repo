@@ -4,7 +4,7 @@ library(imager)
 library(magick)
 
 file <- system.file('extdata/parrots.png' ,package = 'imager')
-marv <-load.image("C:/Users/RM A-225/Documents/R/win-library/3.5/imager/extdata/parrots.png")
+marv <-load.image(file)
 plot(marv)
 
 
